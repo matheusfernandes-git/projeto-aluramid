@@ -1,10 +1,7 @@
-//Lista de teclas
-
-const keyList = document.querySelectorAll('.tecla');
 
 function playSound(selectorSound){  
     const element = document.querySelector(selectorSound);
-
+    
     if(element != null && element.localName === 'audio' ){
         element.play();
     }
@@ -13,6 +10,9 @@ function playSound(selectorSound){
     }
     
 } 
+
+//Lista de teclas
+const keyList = document.querySelectorAll('.tecla');
 
 for(let i = 0; i < keyList.length; i++){
 
